@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //declaracion de arreglos
+        let colores = ["rojo", "azul", "verde", ""];
+        let edades = [15, 29, 53, 89];
+        let varios = ["Edgar", 49, "Santa Anita", false];
+
+        let paises = new Array("Perú", "Chile", "Bolivia", "Ecuador", "Colombia", "Guatemala");
+        let fruta = new Array(3);
+
+        //Acceso a los datos
+        document.write(colores[0] + "<br>");
+        document.write(colores[1] + "<br>");
+        document.write(colores[2] + "<br>");
+        document.write(colores[3] + "<br>");
+
+        for (i = 0; i <= 5; i++) {
+            document.write(paises[i] + "<br>");
+        }
+
+        for (i = 0; i <= 3; i++) {
+            document.write(edades[i] + "<br>");
+        }
+
+        //Asignar valores
+        colores[3] = "amarillo";
+        //Sobreescribir valores
+        colores[0] = "morado";
+
+        for (i = 0; i <= 3; i++) {
+            document.write(colores[i] + "<br>");
+        }
+
+        //Asignacion mediante For
+
+        document.write("<br>" + "Asignacion mediante For");
+
+        for (i = 0; i <= 2; i++) {
+            fruta[i]=prompt("Ingrese la fruta "+(i+1)+":");
+            document.write("<br>"+fruta[i]+"<br>");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Saludo</h1>
+<button onclick="saludo();" >Saludando</button>
+<hr>
+<h1>Suma de numeros</h1>
+<button onclick="sumar();" >Suma de numeros</button>
+        
+    <script>
+
+        function sumar(){
+            
+            num1=parseInt(prompt("Ingresar el numero 1"));
+            num2=parseInt(prompt("Ingresar el numero 2"))
+
+            sum=num1+num2;
+
+            alert("La suma de los numeros es: "+sum)
+        }        
+
+        function saludo() {//declaracion de la funcion
+            nombre = prompt("Ingresar nombre");
+            alert("Buenos dias " + nombre);
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
